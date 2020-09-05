@@ -84,6 +84,11 @@ a, p
    padding: 10px;
 }
 
+.link:hover 
+{
+   color: var(--gold1);
+}
+
 .link--active
 {
    color: var(--gold1);
