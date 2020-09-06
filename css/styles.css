@@ -819,15 +819,14 @@ a, p
    {
       position: fixed;
       background: rgba(91,108,93, .9);
-      left: -42vw;
+      left: -85vw;
       top: 0;
       z-index: 3;
       width: 85vw;
       height: 100vh;
       padding: 50px;
       transition: .3s;
-      display: flex;
-      align-items: center;
+      display: block;
    }
 
    .header a 
@@ -843,6 +842,7 @@ a, p
    .link
    {
       padding: 7px 10px;
+      display: block;
    }
 
    .hero__main
