@@ -7,8 +7,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="css/styles.css">
       <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
    </head>
    <body>
+
+      <i class="fas fa-bars burger-button" id="burger-menu"></i>
+
       <header class="hero">
          <nav class="nav__hero">
             <div class="container nav__container">
@@ -247,5 +252,44 @@
          </div>
       </footer>
       <script src="/js/menu-active.js"></script>
+
+      <script>
+
+         const ipad = window.matchMedia('screen and (max-width: 767px)');
+         const menu = document.querySelector('.links');
+         //console.log(menu);
+         const burgerButton = document.querySelector('#burger-menu');
+         //console.log(burgerButton);
+
+         ipad.addListener(validation)
+
+         function validation(event)
+         {
+             if(event.matches)
+             {
+                 burgerButton.addEventListener('click', hideShow);
+             }
+
+             else
+             {
+                 burgerButton.removeEventListener('click', hideShow);
+             }
+         }
+
+         validation(ipad);
+         
+         function hideShow()
+         {
+             if(menu.classList.contains('is-active'))
+             {
+                 menu.classList.remove('is-active');
+             }
+             
+             else
+             {
+                 menu.classList.add('is-active');
+             }    
+         }
+     </script>
    </body>
 </html>

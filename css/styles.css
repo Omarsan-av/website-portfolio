@@ -27,6 +27,23 @@ body
    font-family: 'Roboto', sans-serif;
 }
 
+.burger-button 
+{
+   display: none !important;
+   text-align: center;
+   position: fixed;
+   z-index: 4;
+   left: 25px;
+   top: 20px;
+   color: white;
+   font-size: 25px;
+}
+
+.menu.is-active
+{
+   left: 0;
+}
+
 a, p
 {
    font-size: 1.6rem;
@@ -761,8 +778,13 @@ a, p
    }
 }
 
-@media screen and (max-width:700px)
+@media screen and (max-width:768px)
 {
+   .burger-button 
+   {
+      display: block !important;
+   }
+
    main .container,
    footer .container
    {
