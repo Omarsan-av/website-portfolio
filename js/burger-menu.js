@@ -1,5 +1,5 @@
 const ipad = window.matchMedia('screen and (max-width: 767px)');
-const menu = document.querySelector('.links');
+const menu = document.querySelector('.menu');
 const burgerButton = document.querySelector('#burger-menu');
 
 ipad.addListener(validation)
