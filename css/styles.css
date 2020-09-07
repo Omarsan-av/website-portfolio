@@ -695,6 +695,11 @@ a, p
 
    }
 
+   .hero__main 
+   {
+      height: auto;
+   }
+
    .title
    {
       font-size: 5rem;
