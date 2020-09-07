@@ -798,9 +798,14 @@ a, p
       justify-content: space-evenly;
    }
 
-   .nav__hero
+   .nav__hero 
    {
       height: auto;
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      z-index: 3;
+      background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
    }
 
    .logo
@@ -850,8 +855,10 @@ a, p
       flex-direction: column-reverse;
       justify-content: flex-end;
       min-height: 70px;
+      position: relative;
       height: auto;
       padding: 30px 0;
+      margin-top: 65px;
    }
 
    .hero__textos
