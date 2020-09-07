@@ -690,8 +690,9 @@ a, p
 {
    .mockup
    {
-      width: 600px;
+      width: auto;
       height: auto;
+
    }
 
    .title
